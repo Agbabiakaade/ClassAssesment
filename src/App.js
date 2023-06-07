@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import UserInput from './component/UserInput';
+import UserOutput from './component/UserOutput';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+function App(){
+  return(
+<div className='App'>
+
+<UserInput/>
+<UserOutput
+paragraph1={'This is the first paragraph of my component'}
+/>
+<UserOutput
+paragraph2={'This is the second paragraph of my component'}
+/>
+
+</div>
   );
-}
 
-export default App;
+}
+export default App
